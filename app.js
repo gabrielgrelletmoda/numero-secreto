@@ -66,3 +66,11 @@ function reiniciarJogo() {
     exibirMensagagemInicial();
     document.getElementById('reiniciar').setAttribute('disabled',true);
 }
+
+function onKeyPressInput(event) {
+    console.log('onKeyPressInput', event.keyCode)
+    if (event.keyCode == 13) {
+        verificarChute()
+        
+    }
+}
